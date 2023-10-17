@@ -1,0 +1,99 @@
+body{
+    background: rgb(65,88,208);
+    background: linear-gradient(32deg, rgba(65,88,208,1) 0%, rgba(200,80,192,1) 46%, rgba(255,204,112,1) 100%);
+    
+}
+h1{
+    margin-bottom:50px ;
+    color: #ffffff;
+}
+.container {
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    height: 500px;
+    width: 600px;
+}
+
+.content {
+    width: 50%;
+    text-align: center;
+    align-items: center; 
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+    direction: rtl; 
+    text-align: left; 
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 25px;
+    color: #ffffff;	
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+    direction: ltr;
+    text-align: left; 
+    border: 0;
+    border-bottom: 1px solid #555;  
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+.right-placeholder::placeholder {
+    direction: rtl;
+    text-align: right;
+    color: #000000;
+}
+
+
+.right-placeholder:focus {
+    color: #d5f718; 
+
+}
+.input-container input:focus {
+    border: none;	
+    outline: none;
+    border-bottom: 1px solid #d5f718;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+}
+
+.calculate-btn{
+
+	background-color:#ffffff;
+	outline: none;
+    border: 0;
+    color: #000000;
+    font-size: 20px;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:10px;
+	border-radius:20px;
+	cursor:pointer;
+	position:relative;
+}
