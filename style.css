@@ -1,6 +1,6 @@
 body{
     background: rgb(65,88,208);
-    background: linear-gradient(32deg, rgba(65,88,208,1) 0%, rgba(200,80,192,1) 46%, rgba(255,204,112,1) 100%);
+    background: linear-gradient(32deg, rgba(65,88,208,1) 0%, rgba(200,80,192,1) 46%, #ffcc70 100%);
     
 }
 h1{
@@ -10,7 +10,7 @@ h1{
 .container {
     background-color: rgb(255 255 255 / 0.3);
     backdrop-filter: blur(10px);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 5px 5px 60px rgb(50, 50, 50);
     color: rgb(0, 0, 0);
     display: flex;
     position: absolute;
@@ -39,9 +39,10 @@ h1{
 }
 
 .input-container label {
+
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 5px;
+    left: 5px;
     font-size: 20px;
     color: #ffffff;	
     transition: all 0.5s ease-in-out;
@@ -56,7 +57,7 @@ h1{
     width: 100%;
     padding: 8px 0 5px 0;
     font-size: 16px;
-    color: #d5f718;
+    color: #ffcc70;
 }
 
 
@@ -67,13 +68,13 @@ h1{
 }
 
 .input-container input:focus::placeholder {
-    color: #d5f718;
+    color: #ffffff;
 }
 
 .input-container input:focus {
     border: none;	
     outline: none;
-    border-bottom: 1px solid #d5f718;
+    border-bottom: 1px solid #ffcc70;
 }
 
 .input-container input:focus ~ label,
@@ -84,10 +85,12 @@ h1{
 
 .calculate-btn{
 
-	background-color:#ffffff;
+    background: rgb(65,88,208);
+    background: linear-gradient(32deg, rgba(65,88,208,1) 0%, rgba(200,80,192,1) 46%, #ffcc70 100%);
+    color: #ffffff;;
 	outline: none;
     border: 0;
-    color: #000000;
+
     font-size: 20px;
 	padding:10px 20px;
 	text-transform:uppercase;
@@ -95,4 +98,11 @@ h1{
 	border-radius:20px;
 	cursor:pointer;
 	position:relative;
+}
+
+.calculate-btn:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+    color: #ffffff;
+    
 }
